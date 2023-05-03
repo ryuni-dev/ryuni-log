@@ -30,7 +30,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                   />
                   <div className="">{data.author[0].name}</div>
                 </div>
-                <div className="self-stretch w-px my-1 bg-gray-300"></div>
+                <div className="self-stretch w-px my-1 bg-stone-300"></div>
               </>
             )}
             <div className=" mr-2 md:ml-0">
@@ -50,7 +50,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
             )}
           </div>
           {data.thumbnail && (
-            <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 mb-7 rounded-3xl overflow-hidden">
+            <div className="relative w-full pb-[66%] lg:pb-[50%] bg-stone-200 dark:bg-zinc-700 mb-7 rounded overflow-hidden">
               <Image
                 src={data.thumbnail}
                 className="object-cover"

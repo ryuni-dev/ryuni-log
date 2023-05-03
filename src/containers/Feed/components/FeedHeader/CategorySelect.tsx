@@ -33,10 +33,10 @@ const CategorySelect: React.FC<Props> = ({ data }) => {
         {currentCategory} Posts <MdExpandMore />
       </div>
       {opened && (
-        <div className="absolute bg-white z-40 p-1 rounded-xl shadow-md">
+        <div className="absolute bg-white z-40 p-1 rounded shadow-md">
           {Object.keys(data).map((key, idx) => (
             <div
-              className="whitespace-nowrap hover:bg-gray-200 p-1 px-2 rounded-xl text-sm cursor-pointer"
+              className="whitespace-nowrap hover:bg-stone-200 p-1 px-2 rounded text-sm cursor-pointer"
               key={idx}
               onClick={() => handleOptionClick(key)}
             >
